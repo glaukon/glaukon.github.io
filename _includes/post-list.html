@@ -1,0 +1,18 @@
+<div class="posts">
+  {% assign featured_posts = site.posts | where: "featured", true %}
+  {% if featured_posts.size > 0 %}
+    <section class="featured-posts" aria-label="Posts destacados">
+      {% for post in featured_posts %}
+        {% include post-card.html post=post %}
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  <section class="latest-posts" aria-label="Últimos posts">
+    {% for post in site.posts %}
+      {% unless post.featured %}
+        {% include post-card.html post=post %}
+      {% endunless %}
+    {% endfor %}
+  </section>
+</div>

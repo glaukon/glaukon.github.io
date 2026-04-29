@@ -1,0 +1,4 @@
+{% assign words = include.content | strip_html | number_of_words %}
+{% assign minutes = words | plus: 179 | divided_by: 180 %}
+{% if minutes < 1 %}{% assign minutes = 1 %}{% endif %}
+{{ minutes }} min de lectura

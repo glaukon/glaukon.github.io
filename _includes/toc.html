@@ -1,0 +1,15 @@
+{% assign headings = include.content | split: '<h2 id="' %}
+{% if headings.size > 1 %}
+  <nav class="toc" aria-label="Tabla de contenidos">
+    <strong>Contenido</strong>
+    <ol>
+      {% for heading in headings offset:1 %}
+        {% assign id = heading | split: '"' | first %}
+        {% assign title = heading | split: '</h2>' | first | split: '>' | last | strip_html %}
+        {% if id and title %}
+          <li><a href="#{{ id }}">{{ title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    </ol>
+  </nav>
+{% endif %}

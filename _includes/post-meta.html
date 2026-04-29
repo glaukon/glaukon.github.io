@@ -1,0 +1,18 @@
+<div class="post-meta">
+  <time datetime="{{ include.post.date | date_to_xmlschema }}">
+    {% include date-es.html date=include.post.date %}
+  </time>
+  <span aria-hidden="true">/</span>
+  <span>{% include reading-time.html content=include.post.content %}</span>
+</div>
+
+{% if include.post.categories.size > 0 or include.post.tags.size > 0 %}
+  <div class="post-taxonomy">
+    {% for category in include.post.categories %}
+      <a class="taxonomy-pill category-pill" href="{{ site.baseurl }}/categorias/#{{ category | slugify }}">{{ category }}</a>
+    {% endfor %}
+    {% for tag in include.post.tags %}
+      <a class="taxonomy-pill tag-pill" href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">{{ tag }}</a>
+    {% endfor %}
+  </div>
+{% endif %}

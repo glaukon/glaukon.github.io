@@ -1,0 +1,26 @@
+<article class="post-card{% if include.post.featured %} is-featured{% endif %}">
+  {% if include.post.image %}
+    <a class="post-card-image" href="{{ site.baseurl }}{{ include.post.url }}" aria-label="{{ include.post.title }}">
+      <img src="{{ site.baseurl }}{{ include.post.image }}" alt="{{ include.post.image_alt | default: include.post.title }}">
+    </a>
+  {% endif %}
+
+  <div class="post-card-body">
+    {% if include.post.featured %}
+      <span class="featured-label">Destacado</span>
+    {% endif %}
+
+    <h2><a href="{{ site.baseurl }}{{ include.post.url }}">{{ include.post.title }}</a></h2>
+    {% include post-meta.html post=include.post %}
+
+    <div class="entry post-excerpt">
+      {% if include.post.excerpt_text %}
+        <p>{{ include.post.excerpt_text }}</p>
+      {% else %}
+        {{ include.post.excerpt }}
+      {% endif %}
+    </div>
+
+    <a href="{{ site.baseurl }}{{ include.post.url }}" class="read-more">Seguir leyendo</a>
+  </div>
+</article>
