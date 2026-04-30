@@ -507,6 +507,137 @@ nav {
   text-align: right;
 }
 
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 190px;
+  gap: 28px;
+  align-items: center;
+  margin: 0 0 34px;
+  padding: 26px;
+  border: 1px solid #d7e7e9;
+  border-radius: 8px;
+  background: $white;
+  box-shadow: 0 14px 36px rgba(31, 49, 61, 0.08);
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+.about-hero-copy {
+  min-width: 0;
+
+  h2 {
+    margin: 0 0 12px;
+    color: #17212b;
+    font-size: 30px;
+    line-height: 1.2;
+
+    @include mobile {
+      font-size: 25px;
+    }
+  }
+
+  p {
+    color: #465763;
+  }
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.about-portrait {
+  justify-self: end;
+  width: 170px;
+  height: 170px;
+  border: 1px solid #d5e2e8;
+  border-radius: 8px;
+  object-fit: cover;
+
+  @include mobile {
+    justify-self: start;
+    width: 132px;
+    height: 132px;
+  }
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 8px 13px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 800;
+  }
+}
+
+.primary-action {
+  background: #176b87;
+  color: $white;
+
+  &:hover,
+  &:active {
+    background: #0f766e;
+    color: $white;
+  }
+}
+
+.secondary-action {
+  border: 1px solid #cddfe6;
+  background: #f9fbfc;
+  color: #344651;
+
+  &:hover,
+  &:active {
+    background: $white;
+    color: #0f766e;
+  }
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0 30px;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.about-panel {
+  padding: 18px;
+  border: 1px solid #d7e7e9;
+  border-radius: 8px;
+  background: $white;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    color: #17212b;
+    line-height: 1.25;
+  }
+
+  p {
+    margin-bottom: 0;
+    color: #465763;
+  }
+}
+
 .archive-list,
 .taxonomy-sections {
   h2 {
