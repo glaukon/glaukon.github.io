@@ -18,9 +18,9 @@ html {
 }
 
 body {
-  background: #fbfcfd;
+  background: #f6f8fb;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: #24313a;
 }
 
 .container {
@@ -73,7 +73,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: darken($blue, 12%);
+    color: #0f766e;
   }
 }
 
@@ -149,13 +149,13 @@ img {
 }
 
 .category-pill {
-  background: #e7f4f1;
-  color: #12645a;
+  background: #e8f6f4;
+  color: #0f766e;
 }
 
 .tag-pill {
-  background: #fff3d8;
-  color: #725013;
+  background: #fff4d6;
+  color: #7a4d0b;
 }
 
 .featured-label {
@@ -164,7 +164,7 @@ img {
   min-height: 26px;
   padding: 4px 9px;
   border-radius: 4px;
-  background: #222;
+  background: #17212b;
   color: $white;
   font-size: 13px;
   font-weight: 700;
@@ -178,8 +178,8 @@ img {
   background: $lightGray;
 }
 ::selection {
-  color: $black;
-  background: $lightGray;
+  color: #17212b;
+  background: #cce7e4;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -203,88 +203,140 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid #dfe8ee;
+  background: #f9fbfc;
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 0;
 
   @include mobile {
-    text-align: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+  }
+}
+
+.brand-block {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 16px;
+
+  @include mobile {
+    align-items: flex-start;
   }
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
-
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  flex: 0 0 auto;
+  width: 72px;
+  height: 72px;
+  padding: 3px;
+  border: 1px solid #d5e2e8;
+  border-radius: 8px;
+  background: $white;
+  box-shadow: 0 8px 24px rgba(31, 49, 61, 0.08);
 
   img {
-    border-radius: 5px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
   }
 }
 
 .site-info {
-  float: left;
+  min-width: 0;
+}
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+.site-kicker {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  margin-bottom: 4px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #e8f6f4;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: #17212b;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: 0;
+
+  @include mobile {
+    font-size: 29px;
+  }
+
+  a:hover {
+    color: #0f766e;
+  }
 }
 
 .site-description {
-  margin: -5px 0 0 0;
-  color: $gray;
+  max-width: 560px;
+  margin: 8px 0 0;
+  color: #52616d;
   font-size: 16px;
+  line-height: 1.35;
 
   @include mobile {
-    margin: 3px 0;
+    margin-top: 7px;
   }
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+  margin: 0;
   font-family: $helveticaNeue;
-  font-size: 16px;
+  font-size: 15px;
 
   @include mobile {
-    float: none;
-    margin-top: 9px;
-    display: block;
-    font-size: 16px;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 15px;
   }
 
   a {
-    margin-left: 14px;
-    color: $darkGray;
-    text-align: right;
-    font-weight: 300;
+    display: inline-flex;
+    align-items: center;
+    min-height: 34px;
+    margin: 0;
+    padding: 6px 10px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #344651;
+    text-align: center;
+    font-weight: 700;
     letter-spacing: 0;
 
-    @include mobile {
-      margin: 0 10px;
-      color: $blue;
+    &:hover,
+    &:active {
+      border-color: #cddfe6;
+      background: $white;
+      color: #0f766e;
     }
   }
 }
@@ -319,10 +371,10 @@ nav {
 
 .post-card.is-featured {
   padding: 20px;
-  border: 1px solid #d9e6e8;
+  border: 1px solid #d7e7e9;
   border-radius: 8px;
   background: $white;
-  box-shadow: 0 10px 32px rgba(26, 43, 53, 0.08);
+  box-shadow: 0 14px 36px rgba(31, 49, 61, 0.08);
 }
 
 .post-card-image {
@@ -358,7 +410,7 @@ nav {
   display: inline-flex;
   align-items: center;
   min-height: 32px;
-  color: #0b6f8f;
+  color: #176b87;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0;
@@ -397,9 +449,9 @@ nav {
 .toc {
   margin: 22px 0 30px;
   padding: 16px 18px;
-  border: 1px solid #d9e6e8;
+  border: 1px solid #d7e7e9;
   border-radius: 8px;
-  background: #f5faf9;
+  background: #f4faf9;
 
   strong {
     display: block;
@@ -501,9 +553,8 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid #dfe8ee;
+  background-color: #eef3f6;
 }
 
 footer {
