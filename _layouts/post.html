@@ -22,6 +22,8 @@ layout: default
     {{ content }}
   </div>
 
+  {% include share-buttons.html %}
+
   <nav class="post-navigation" aria-label="Navegación entre posts">
     {% if page.previous %}
       <a class="previous-post" href="{{ site.baseurl }}{{ page.previous.url }}">

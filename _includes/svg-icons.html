@@ -1,48 +1,50 @@
 <nav class="social-links" aria-label="Redes sociales">
-  {% if site.footer-links.email %}
-    <a class="social-link" href="mailto:{{ site.footer-links.email }}" aria-label="Email">
-      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-        <path d="M4.75 6.5h14.5c.69 0 1.25.56 1.25 1.25v8.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69.56-1.25 1.25-1.25Zm.45 1.5 6.8 5.07L18.8 8H5.2Zm13.8 1.48-6.55 4.88a.75.75 0 0 1-.9 0L5 9.48V16h14V9.48Z" />
+  {% assign footer_links = site.footer_links %}
+
+  {% if footer_links.email %}
+    <a class="social-link" href="mailto:{{ footer_links.email }}" aria-label="Email">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#344651" focusable="false">
+        <path fill="currentColor" d="M4.75 6.5h14.5c.69 0 1.25.56 1.25 1.25v8.5c0 .69-.56 1.25-1.25 1.25H4.75c-.69 0-1.25-.56-1.25-1.25v-8.5c0-.69.56-1.25 1.25-1.25Zm.45 1.5 6.8 5.07L18.8 8H5.2Zm13.8 1.48-6.55 4.88a.75.75 0 0 1-.9 0L5 9.48V16h14V9.48Z" />
       </svg>
     </a>
   {% endif %}
 
-  {% if site.footer-links.instagram %}
-    <a class="social-link" href="https://instagram.com/{{ site.footer-links.instagram }}" aria-label="Instagram">
-      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-        <path d="M8 3.5h8A4.5 4.5 0 0 1 20.5 8v8a4.5 4.5 0 0 1-4.5 4.5H8A4.5 4.5 0 0 1 3.5 16V8A4.5 4.5 0 0 1 8 3.5Zm0 1.7A2.8 2.8 0 0 0 5.2 8v8A2.8 2.8 0 0 0 8 18.8h8a2.8 2.8 0 0 0 2.8-2.8V8A2.8 2.8 0 0 0 16 5.2H8Zm4 3.15A3.65 3.65 0 1 1 12 15.65 3.65 3.65 0 0 1 12 8.35Zm0 1.7A1.95 1.95 0 1 0 13.95 12 1.95 1.95 0 0 0 12 10.05Zm4.02-2.45a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05Z" />
+  {% if footer_links.instagram %}
+    <a class="social-link" href="https://instagram.com/{{ footer_links.instagram }}" aria-label="Instagram">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#344651" focusable="false">
+        <path fill="currentColor" d="M8 3.5h8A4.5 4.5 0 0 1 20.5 8v8a4.5 4.5 0 0 1-4.5 4.5H8A4.5 4.5 0 0 1 3.5 16V8A4.5 4.5 0 0 1 8 3.5Zm0 1.7A2.8 2.8 0 0 0 5.2 8v8A2.8 2.8 0 0 0 8 18.8h8a2.8 2.8 0 0 0 2.8-2.8V8A2.8 2.8 0 0 0 16 5.2H8Zm4 3.15A3.65 3.65 0 1 1 12 15.65 3.65 3.65 0 0 1 12 8.35Zm0 1.7A1.95 1.95 0 1 0 13.95 12 1.95 1.95 0 0 0 12 10.05Zm4.02-2.45a1.05 1.05 0 1 1-1.05 1.05 1.05 1.05 0 0 1 1.05-1.05Z" />
       </svg>
     </a>
   {% endif %}
 
-  {% if site.footer-links.linkedin %}
-    <a class="social-link" href="https://www.linkedin.com/in/{{ site.footer-links.linkedin }}" aria-label="LinkedIn">
-      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-        <path d="M6.28 8.9H3.75v10.35h2.53V8.9ZM5.02 4.75A1.48 1.48 0 1 0 6.5 6.23a1.48 1.48 0 0 0-1.48-1.48Zm5.65 4.15H8.25v10.35h2.52v-5.43c0-1.43.66-2.28 1.86-2.28 1.06 0 1.57.74 1.57 2.2v5.51h2.53v-6.07c0-2.76-1.47-4.5-3.77-4.5a3.05 3.05 0 0 0-2.29.98V8.9Z" />
+  {% if footer_links.linkedin %}
+    <a class="social-link" href="https://www.linkedin.com/in/{{ footer_links.linkedin }}/" aria-label="LinkedIn">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#344651" focusable="false">
+        <path fill="currentColor" d="M6.28 8.9H3.75v10.35h2.53V8.9ZM5.02 4.75A1.48 1.48 0 1 0 6.5 6.23a1.48 1.48 0 0 0-1.48-1.48Zm5.65 4.15H8.25v10.35h2.52v-5.43c0-1.43.66-2.28 1.86-2.28 1.06 0 1.57.74 1.57 2.2v5.51h2.53v-6.07c0-2.76-1.47-4.5-3.77-4.5a3.05 3.05 0 0 0-2.29.98V8.9Z" />
       </svg>
     </a>
   {% endif %}
 
-  {% if site.footer-links.twitter %}
-    <a class="social-link" href="https://x.com/{{ site.footer-links.twitter }}" aria-label="X">
-      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-        <path d="M14.25 10.64 21.25 3h-2.06l-5.86 6.4L8.65 3h-5.9l7.34 10.02L2.75 21h2.06l6.2-6.76L15.96 21h5.9l-7.61-10.36Zm-2.2 2.4-.72-1L5.42 4.56h2.24l4.6 5.83.72 1 6.18 8.05h-2.24l-4.87-6.4Z" />
+  {% if footer_links.twitter %}
+    <a class="social-link" href="https://x.com/{{ footer_links.twitter }}" aria-label="X">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#344651" focusable="false">
+        <path fill="currentColor" d="M14.25 10.64 21.25 3h-2.06l-5.86 6.4L8.65 3h-5.9l7.34 10.02L2.75 21h2.06l6.2-6.76L15.96 21h5.9l-7.61-10.36Zm-2.2 2.4-.72-1L5.42 4.56h2.24l4.6 5.83.72 1 6.18 8.05h-2.24l-4.87-6.4Z" />
       </svg>
     </a>
   {% endif %}
 
-  {% if site.footer-links.github %}
-    <a class="social-link" href="https://github.com/{{ site.footer-links.github }}" aria-label="GitHub">
-      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-        <path d="M12 2.75a9.25 9.25 0 0 0-2.93 18.03c.46.08.63-.2.63-.44v-1.58c-2.56.55-3.1-1.1-3.1-1.1-.42-1.07-1.02-1.35-1.02-1.35-.83-.57.06-.56.06-.56.92.06 1.4.95 1.4.95.82 1.39 2.14.99 2.66.76.08-.59.32-.99.58-1.22-2.04-.23-4.18-1.02-4.18-4.55 0-1 .36-1.83.94-2.47-.1-.23-.41-1.17.09-2.44 0 0 .77-.25 2.53.94A8.7 8.7 0 0 1 12 7.42c.79 0 1.57.1 2.31.31 1.75-1.19 2.52-.94 2.52-.94.5 1.27.19 2.21.09 2.44.59.64.94 1.47.94 2.47 0 3.54-2.15 4.31-4.19 4.54.33.29.62.85.62 1.72v2.38c0 .24.17.52.64.43A9.25 9.25 0 0 0 12 2.75Z" />
+  {% if footer_links.github %}
+    <a class="social-link" href="https://github.com/{{ footer_links.github }}" aria-label="GitHub">
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#344651" focusable="false">
+        <path fill="currentColor" d="M12 2.75a9.25 9.25 0 0 0-2.93 18.03c.46.08.63-.2.63-.44v-1.58c-2.56.55-3.1-1.1-3.1-1.1-.42-1.07-1.02-1.35-1.02-1.35-.83-.57.06-.56.06-.56.92.06 1.4.95 1.4.95.82 1.39 2.14.99 2.66.76.08-.59.32-.99.58-1.22-2.04-.23-4.18-1.02-4.18-4.55 0-1 .36-1.83.94-2.47-.1-.23-.41-1.17.09-2.44 0 0 .77-.25 2.53.94A8.7 8.7 0 0 1 12 7.42c.79 0 1.57.1 2.31.31 1.75-1.19 2.52-.94 2.52-.94.5 1.27.19 2.21.09 2.44.59.64.94 1.47.94 2.47 0 3.54-2.15 4.31-4.19 4.54.33.29.62.85.62 1.72v2.38c0 .24.17.52.64.43A9.25 9.25 0 0 0 12 2.75Z" />
       </svg>
     </a>
   {% endif %}
 
-  {% if site.footer-links.rss %}
+  {% if footer_links.rss %}
     <a class="social-link" href="{{ site.baseurl }}/feed.xml" aria-label="RSS">
-      <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false">
-        <path d="M5.85 16.3a1.85 1.85 0 1 1 0 3.7 1.85 1.85 0 0 1 0-3.7ZM4 9.2c5.96 0 10.8 4.84 10.8 10.8h-2.35A8.45 8.45 0 0 0 4 11.55V9.2Zm0-5.2c8.84 0 16 7.16 16 16h-2.35A13.65 13.65 0 0 0 4 6.35V4Z" />
+      <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#344651" focusable="false">
+        <path fill="currentColor" d="M5.85 16.3a1.85 1.85 0 1 1 0 3.7 1.85 1.85 0 0 1 0-3.7ZM4 9.2c5.96 0 10.8 4.84 10.8 10.8h-2.35A8.45 8.45 0 0 0 4 11.55V9.2Zm0-5.2c8.84 0 16 7.16 16 16h-2.35A13.65 13.65 0 0 0 4 6.35V4Z" />
       </svg>
     </a>
   {% endif %}

@@ -22,7 +22,7 @@ footer-links:
   facebook:
   flickr:
   github: 
-  instagram: glaukon
+  instagram: glauk0n
   linkedin: andresalvarezgonzalez
   pinterest:
   rss: # just type anything here for a working RSS icon
@@ -30,6 +30,13 @@ footer-links:
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
+
+footer_links:
+  email: andresalvarezgonzalez@gmail.com
+  instagram: glauk0n
+  linkedin: andresalvarezgonzalez
+  twitter: glauk0n
+  rss:
 
 
 
@@ -42,7 +49,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://glaukon.github.io
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
@@ -93,3 +100,4 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+

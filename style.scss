@@ -507,6 +507,53 @@ nav {
   text-align: right;
 }
 
+.share-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 38px 0 18px;
+  padding: 16px;
+  border: 1px solid #d7e7e9;
+  border-radius: 8px;
+  background: #f9fbfc;
+
+  span {
+    color: #52616d;
+    font-size: 15px;
+    font-weight: 800;
+  }
+}
+
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.share-button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #cddfe6;
+  border-radius: 6px;
+  background: $white;
+  color: #344651;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+
+  &:hover,
+  &:active {
+    border-color: #b9d6dc;
+    background: #176b87;
+    color: $white;
+  }
+}
+
 .about-hero {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 190px;

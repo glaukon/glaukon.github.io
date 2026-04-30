@@ -74,6 +74,7 @@ Si quieres hablar sobre un proyecto, una mejora técnica o una colaboración, pu
 
 También puedes encontrarme en:
 
-- [LinkedIn](https://www.linkedin.com/in/andresalvarezgonzalez)
+- [LinkedIn](https://www.linkedin.com/in/andresalvarezgonzalez/)
 - [X / Twitter](https://x.com/glauk0n)
-- [Instagram](https://www.instagram.com/glaukon)
+- [Instagram](https://www.instagram.com/glauk0n)
+
