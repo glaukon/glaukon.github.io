@@ -74,6 +74,8 @@ Temas:
 
 ## Calendario inicial
 
+Actualización: los cuatro temas de las semanas 3 a 6 ya están redactados en `_posts` con fechas propuestas para el 6, 13, 20 y 27 de octubre de 2026. La activación del calendario automático y los pasos de publicación están en `PUBLICACION.md`. El artículo de sistemas a desarrollo continúa como borrador.
+
 Semana 1:
 
 Artículo: "Por qué una pequeña empresa debería revisar su infraestructura tecnológica antes de crecer"
