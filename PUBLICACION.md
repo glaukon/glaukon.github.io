@@ -13,6 +13,8 @@ Un artículo cada martes. Las fechas ya están en los archivos y se pueden cambi
 
 El artículo de mayo sobre sistemas y desarrollo sigue siendo un borrador (`published: false`).
 
+Los cuatro artículos de octubre incluyen portadas generadas con IA en `images/octubre-2026/`, con sus campos `image` e `image_alt`. Incluye también esta carpeta al crear el commit y subir los cambios.
+
 ## Activación inicial en GitHub
 
 1. Revisa los cuatro artículos y sus fechas en tu editor.
@@ -55,3 +57,44 @@ Los archivos de un repositorio público se pueden leer en GitHub antes de public
 - [Configurar el origen de GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 - [Workflows de GitHub Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 - [Ejecuciones programadas de GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule).
+
+
+## Prompts de las portadas
+
+Generadas con la herramienta integrada de generación de imágenes. Cada prompt combina el prefijo, su escena y el sufijo siguientes.
+
+Prefijo:
+
+```text
+Use case: photorealistic-natural. Asset type: editorial cover photograph for a Spanish technology blog, one image only. Landscape 16:9 composition.
+```
+
+Escena de `images/octubre-2026/copias-seguridad.png`:
+
+```text
+A realistic small business desk with an open laptop showing simple folder icons and a successful restore check symbol without text, a connected external backup drive and a second disconnected drive neatly nearby. Visual emphasis on recoverable data and tangible backup equipment.
+```
+
+Escena de `images/octubre-2026/automatizacion.png`:
+
+```text
+A realistic small business desk with an open laptop showing an elegant minimal workflow of three connected rectangular task cards and check marks without any text, with a neatly arranged small stack of paperwork beside it. Visual emphasis on turning repeated paperwork into a simple digital process.
+```
+
+Escena de `images/octubre-2026/software-libre.png`:
+
+```text
+A realistic small business desk with two different unbranded laptops side by side showing matching abstract document and spreadsheet interfaces without any letters or numbers, and a notebook. Visual emphasis on interoperability, freedom to choose tools and practical collaboration.
+```
+
+Escena de `images/octubre-2026/aplicacion-interna.png`:
+
+```text
+A realistic small business desk with an open laptop and a smartphone next to it, both displaying the same elegant minimal task board with three columns and a few colored cards, no words or numbers. Visual emphasis on a simple usable internal application across devices.
+```
+
+Sufijo común:
+
+```text
+Consistent series art direction: authentic modest modern office, light oak tabletop, soft natural window daylight, restrained neutral tones, realistic materials, clean uncluttered composition, three-quarter view, main objects centered with generous crop-safe margins. Professional editorial photography, credible everyday technology, no people, no brand logos, no watermark, no captions, no readable text, no sci-fi holograms.
+```

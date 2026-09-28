@@ -5,6 +5,8 @@ date: 2026-10-06 09:00:00 +0200
 categories: [Sistemas, Empresa]
 tags: [copias-de-seguridad, recuperacion, continuidad, pymes]
 featured: false
+image: /images/octubre-2026/copias-seguridad.png
+image_alt: "Portátil con un símbolo de recuperación de archivos y dos discos externos sobre un escritorio."
 excerpt_text: "Una copia sirve cuando permite recuperar el trabajo. Cómo definir qué proteger, probar una restauración y organizar una rutina asumible para una pequeña empresa."
 toc: true
 published: true

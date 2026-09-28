@@ -5,6 +5,8 @@ date: 2026-10-20 09:00:00 +0200
 categories: [Software Libre, Empresa]
 tags: [software-libre, herramientas, independencia, pymes]
 featured: false
+image: /images/octubre-2026/software-libre.png
+image_alt: "Dos portátiles con interfaces de documentos y hojas de cálculo sobre una mesa de trabajo."
 excerpt_text: "Elegir software libre exige valorar mantenimiento, compatibilidad y salida de los datos. Una forma práctica de decidir dónde encaja en una pequeña empresa."
 toc: true
 published: true

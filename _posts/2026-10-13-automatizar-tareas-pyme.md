@@ -5,6 +5,8 @@ date: 2026-10-13 09:00:00 +0200
 categories: [Sistemas, Empresa]
 tags: [automatizacion, productividad, procesos, pymes]
 featured: false
+image: /images/octubre-2026/automatizacion.png
+image_alt: "Portátil con un flujo de tareas completadas junto a una pila de documentos en una oficina."
 excerpt_text: "Un proceso repetitivo puede mejorar con una automatización pequeña. Cómo elegir la primera tarea, probarla y mantener el control cuando algo falla."
 toc: true
 published: true

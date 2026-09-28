@@ -5,6 +5,8 @@ date: 2026-10-27 09:00:00 +0100
 categories: [Desarrollo, Empresa]
 tags: [aplicaciones, usabilidad, procesos, desarrollo, pymes]
 featured: false
+image: /images/octubre-2026/aplicacion-interna.png
+image_alt: "Portátil y móvil con una aplicación de gestión de tareas representada mediante tarjetas de colores."
 excerpt_text: "Una aplicación interna funciona cuando facilita el trabajo cotidiano. Qué priorizar en la primera versión: un recorrido completo, datos claros y mantenimiento previsto."
 toc: true
 published: true
